@@ -1,0 +1,1 @@
+export const UrlPeintureDigital='http://localhost:8020/api/oeuvres'
