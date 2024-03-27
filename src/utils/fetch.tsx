@@ -29,3 +29,5 @@ export function fetchArticles(url: string, params?: { [key: string]: any }) {
 
   return { articles, isLoading }; // Retourner les articles et le statut de chargement
 }
+
+

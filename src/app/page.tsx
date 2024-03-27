@@ -27,6 +27,11 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
+
+<div className="w-4/12 h-1/2 absolute bottom-0 left-0 border" >
+              
+
+              </div>
   
       <ul className='flex flex-wrap '>
         { isLoading ? (

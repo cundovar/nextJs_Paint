@@ -17,27 +17,35 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body className="">
-<div className="gap-4 border">
+    <html lang="fr" className="h-dvh border">
+      <body className="h-dvh">
+<div className="gap-4 h-dvh border">
         
-        <div className="mb-5">
-          <div className="w-11/12 m-auto">
+        <div className="mb-5 h-dvh">
+          <div className="w-11/12 h-dvh m-auto">
              <h1 className="text-4xl">Nathan Vallan peinture</h1>
              <div className='w-full flex  '>
-            <h4 className=' '>connexion</h4>
-        </div>
+              <h4 className=' '>connexion</h4>
+             </div>
         
-        <div className="m-auto w-full border flex  ">
+        <div className="m-auto w-full border cadre relative overflow-hidden flex  ">
 
-          <div> 
+          <div className="nav"> 
           < Header />
 
           </div>
 
-          <div>
+          <div className="flex">
+           
+            <div className=" w-full h-full absolute right-0 z-20 ">
+          
         {children}
 
+              
+
+            </div>
+            
+
           </div>
 
         </div>
@@ -45,10 +53,10 @@ export default function RootLayout({
 
 
           </div>
-        <div className="mb-5 mt-96">
+        {/* <div className="mb-5 mt-96">
           < Footer />
 
-        </div>
+        </div> */}
 
 </div>
         </body>

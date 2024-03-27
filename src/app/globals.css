@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import ""
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -15,9 +16,12 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html{
+  max-height:100vh;
 
+}
 body {
-  height:100vh;
+  max-height:100vh;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -37,4 +41,12 @@ body {
 }
 .flex-wrap{
   flex-wrap:wrap !important;
+}
+
+.cadre{
+  overflow:hidden !important;
+  height:80%
+}
+.nav{
+  z-index:999 !important;
 }

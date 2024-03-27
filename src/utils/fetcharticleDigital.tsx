@@ -9,7 +9,7 @@ interface Article {
   categorie?: string; // Ajoutez la propriété categorie ici
 }
 
-export function fetchArticlesDigital(url: string, categorieUrl?: string) {
+export function fetchArticlesCategorie(url: string, categorieUrl?: string) {
   const [articles, setArticles] = useState<Article[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
